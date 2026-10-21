@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-from database import SessionDep
-from models.user import *
+from ..database import SessionDep
+from ..models.user import *
 
 router = APIRouter()
 

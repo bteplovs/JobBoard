@@ -7,7 +7,7 @@ class UserBase(SQLModel):
 
 class User(UserBase, table=True):
     id: int | None = Field(default=None, primary_key=True)
-    hashed_password: str
+    password: str # Change back to hashed password in the future
 
 
 class UserPublic(UserBase):

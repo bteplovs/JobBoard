@@ -1,7 +1,6 @@
 from fastapi import Depends, FastAPI
 
-from database import create_db_and_tables
-
+from .database import create_db_and_tables
 from .dependencies import get_query_token
 from .routers import users
 
